@@ -25,6 +25,21 @@ public class ForLoop {
             }
         }
         System.out.println("There are " + primeCounter + " prime numbers in the range of 0 to 1000");
+
+        int value = 0;
+        int counterOne = 0;
+        for(int k = 1; k <= 1000; k++){
+            if(k % 3 == 0 && k % 5 == 0){
+                System.out.println(k + " Values that met the conditions");
+                value += k;
+                counterOne++;
+            }
+            if(counterOne == 5){
+                break;
+            }
+        }
+
+        System.out.println(value + " is the sum of numbers that met the condition");
     }
 
     public static boolean isPrime(int wholeNumber){
