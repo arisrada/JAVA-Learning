@@ -31,8 +31,8 @@ public class ForLoop {
         for(int k = 1; k <= 1000; k++){
             if(k % 3 == 0 && k % 5 == 0){
                 System.out.println(k + " Values that met the conditions");
-                value += k;
                 counterOne++;
+                value += k;
             }
             if(counterOne == 5){
                 break;
